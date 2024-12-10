@@ -1,74 +1,36 @@
-:root {
-    --primary-color: #007bff;
-    --hover-color: #0056b3;
-    --success-bg: #d4edda;
-    --success-color: #155724;
-    --danger-bg: #f8d7da;
-    --danger-color: #721c24;
-}
-
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-h1, h2, h3 {
     text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
 }
 
-.section, .status-box, .bottom-box {
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px 0;
+h1 {
+    color: #333;
 }
 
-button {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
+.status-box {
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: var(--hover-color);
+    width: 80%;
+    max-width: 400px;
+    background-color: #fff;
 }
 
 .bottom-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .bottom-box {
-    flex: 1;
-    margin: 0 10px;
-    text-align: center;
-}
-
-#tea-status {
-    background-color: var(--success-bg);
-    border-color: #c3e6cb;
-}
-
-#tea-status.hazir {
-    background-color: var(--success-bg);
-    color: var(--success-color);
-}
-
-#tea-status.hazir-degil {
-    background-color: var(--danger-bg);
-    color: var(--danger-color);
-}
-
-#water-status {
-    background-color: var(--success-bg);
-    border-color: #c3e6cb;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 250px;
 }
