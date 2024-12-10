@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Çay Durumu</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Doğru Statik Dosya Bağlantıları -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <h1>Çay Durumu</h1>
@@ -30,15 +31,4 @@
             <p id="current-tea-pack">Bilgi yükleniyor...</p>
         </div>
         <div class="bottom-box">
-            <h3>Muhtemel Çay Saatleri</h3>
-            <p id="possible-tea-times">Bilgi yükleniyor...</p>
-        </div>
-        <div class="bottom-box">
-            <h3>Toplanan Çay Ücreti ve Tarihi</h3>
-            <p id="collected-tea-fee">Bilgi yükleniyor...</p>
-        </div>
-    </div>
-    
-    <script src="script.js"></script>
-</body>
-</html>
+            <h3>Muhtemel Ç
