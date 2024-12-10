@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönetim Paneli</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Yönetim Paneli</h1>
+    
+    <!-- Çay Durum Yönetimi Bölümü -->
+    <div class="section">
+        <h2>Çay Durum Yönetimi</h2>
+        <button onclick="setTeaStatus('hazir')">Çay Hazır!</button>
+        <button onclick="setTeaStatus('hazir-degil')">Çay Hazır Değil!</button>
+        <button onclick="setTeaStatus('bitmek-uzere')">Çay Bitmek Üzere!</button>
+        <button onclick="setTeaStatus('bitti')">Çay Bitti!</button>
+        <label for="tea-timer">Çayın olmasına (dakika):</label>
+        <input type="number" id="tea-timer" name="tea-timer">
+        <button onclick="setTeaTimer()">Sayaç Ayarla</button>
+    </div>
+    
+    <!-- Su Durum Yönetimi Bölümü -->
+    <div class="section">
+        <h2>Su Durum Yönetimi</h2>
+        <button onclick="setWaterStatus('hazir')">Su Hazır!</button>
+        <label for="water-timer">Kaynamasına (dakika):</label>
+        <input type="number" id="water-timer" name="water-timer">
+        <button onclick="setWaterTimer()">Sayaç Ayarla</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
