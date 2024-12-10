@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.section, .status-box, .bottom-box {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-box {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+#tea-status {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+#tea-status.hazir {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+#tea-status.hazir-degil {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+#water-status {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
